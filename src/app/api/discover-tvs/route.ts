@@ -25,7 +25,7 @@ export async function GET() {
     });
     client.search('ssdp:all');
     
-    setTimeout(() => resolve(foundDevices), 1000  * 5); // wait 3s
+    setTimeout(() => resolve(foundDevices), 1000  * 30); // wait 3s
   });
 
   const devices = await search;
